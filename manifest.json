@@ -12,20 +12,22 @@
 
 	"background":{
 		"scripts":[
-	    	"js/jquery.js",
-            "js/news.js",
+	    	"js/jquery-2.1.0.min.js",
+            "js/config.js",
             "js/account.js",
+            "js/news.js",
 			"background.js"
 		]
 	},
 	"browser_action":{
 		"default_title":"NKBBS",
 		"default_icon":"img/logo_offline.png",
-        "default_popup":"popup.html"
+        "default_popup":"popup/logout.html"
 	},
 	"offline_enabled":false,
 	"permissions":[
-		"http://bbs.nankai.edu.cn/",
+		"http://bbs.nankai.edu.cn/*",
+        "http://localhost/*",
 		"cookies",
 		"notifications",
 		"tabs"
